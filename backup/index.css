@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url('/font/reemKufi/ReemKufi-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palorant';
+    src: url('/font/valorantfont/Valorant\ Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.badan{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    background-image: url('/assets/bghome.jpg');
+    width: 100%;
+    min-height: 100vh; /* Biar tinggi mengikuti layar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h2{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.aotm {
+    position: absolute;
+    z-index: 2;
+    top: 36vh; 
+    left: 4vw;
+    color: black;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.jeff{
+    position: absolute;
+    z-index: 2;
+    top: 30vh;
+    left: 27vw;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.skill{
+    position: absolute;
+    z-index: 2;
+    top: 22vw;
+    left: 4vw;
+    display: flex;
+    gap: 1rem;
+}
+
+.cloud{
+    width: 4vw;
+    height: auto;
+}
+
+.up{
+    width: 3.5vw;
+    height: auto;
+}
+
+.tail{
+    width: 5.5vw;
+    height: auto;
+}
+
+.blade{
+    width: 4vw;
+    height: auto;
+}
+
+.online{
+    position: absolute;
+    z-index: 2;
+    top: 420px; 
+    left: 200px; 
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.palorant{
+    position: absolute;
+    z-index: 2;
+    top: 455px;
+    left: 200px;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Palorant', sans-serif;
+}
+
+.play {
+    background-color: red;
+    color: rgb(243, 235, 235);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+    position: absolute;
+    z-index: 10;
+    top: 85vh;
+    left: 45vh;
+}
+
+.play:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.info-icon {
+    position: absolute;
+    width: 3.5vh;
+    height: auto;
+    z-index: 2;
+    top: 39%;
+    left: 38%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.info-icon:hover {
+    color: #007bff; /* Warna saat di-hover, bisa disesuaikan */
+}
+
+.description {
+    display: none;
+    position: absolute;
+    background-color: #d0d0d0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80%;
+    width: 300px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .aotm {
+        top: 25vh;
+        left: 5vw;
+        font-size: 5vw;
+    }
+
+    .jeff {
+        top: 32vh;
+        left: 5vw;
+        font-size: 8vw;
+    }
+
+    .skill {
+        padding: 0;
+        margin: 0;
+        top: 50vh;
+        left: 7vh;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .skill img {
+        width: 5vw;
+    }
+
+    .online, .palorant {
+        left: 5vw;
+    }
+
+    .online {
+        top: 68vh;
+        left: 8vw;
+        font-size: 3vw;
+    }
+
+    .palorant {
+        top: 73vh;
+        left: 7vw;
+        font-size: 8vw;
+    }
+
+    .play {
+        width: 25%;
+        height: 6%;
+        position: absolute;
+        top: 85vh;
+        left: 15vw;
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .info-icon {
+        top: 42vh;
+        left: 23vw;
+        width: 2.5vw;
+    }
+
+    .description {
+        width: 50%;
+        left: 10%;
+        font-size: 14px;
+    }
+}

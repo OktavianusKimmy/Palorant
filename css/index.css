@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url('/font/reemKufi/ReemKufi-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palorant';
+    src: url('/font/valorantfont/Valorant\ Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.aotm,
+.jeff,
+.palorant,
+.online {
+    margin: 0; /* Reset margin */
+    text-align: left;
+}
+
+.badan{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    background-image: url('/assets/bghome.jpg');
+    width: 100%;
+    min-height: 100vh; /* Biar tinggi mengikuti layar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.aotmJeff{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.aotmJeff h1, h2{
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h2{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.aotm {
+    position: relative;
+    z-index: 2;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    color: black;
+    font-size: 5.5vw;
+    font-weight: bold;
+}
+
+.jeff-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.jeff{
+    position: relative;
+    z-index: 2;
+    margin-left: 2vw;
+    color: black;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.info-icon {
+    position: relative;
+    margin-top: 7vw;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.info-icon:hover {
+    color: #007bff; /* Warna saat di-hover, bisa disesuaikan */
+}
+
+.skill {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: 2vw;
+    gap: 1rem;
+}
+
+.cloud{
+    width: 4vw;
+    height: auto;
+}
+
+.up{
+    width: 3.5vw;
+    height: auto;
+}
+
+.tail{
+    width: 5.5vw;
+    height: auto;
+}
+
+.blade{
+    width: 4vw;
+    height: auto;
+}
+
+.online{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4vw;
+    margin-left: 15vw;
+    z-index: 3;
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.palorant{
+    position: relative;
+    z-index: 3;
+    width: auto;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 15vw;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Palorant', sans-serif;
+}
+
+.play {
+    background-color: red;
+    color: rgb(243, 235, 235);
+    font-size: 2vw;
+    text-align: center;
+    text-justify: auto;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+    position: relative;
+    z-index: 10;
+    width: 18vw;
+    height: 4vw;
+    margin-left: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play:hover {
+    background-color: white;
+    color: red;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+
+
+.description {
+    display: none;
+    position: absolute;
+    background-color: #d0d0d0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80%;
+    width: 300px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.footer-shape{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .aotm{
+        font-size: 3rem;
+    }
+
+    .jeff{
+        font-size: 5rem;
+    }
+
+    .info-icon{
+        margin-top: 10vw;
+    }
+
+    .skill{
+        width: auto;
+        height: auto;
+    }
+    
+    .cloud{
+        height: 5rem;
+        width: auto;
+    }
+
+    .up{
+        height: 5rem;
+        width: auto;
+    }
+
+    .tail{
+        height: 5rem;
+        width: auto;
+    }
+
+    .blade{
+        height: 5rem;
+        width: auto;
+    }
+
+    .online{
+        font-size: 4vw;
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+
+    .palorant{
+        font-size: 10vw;
+        margin-left: 5vw;
+        margin-top:0vw;
+    }
+
+    .play{
+        margin-top: 5vw;
+        width: 30vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+
+    .description {
+        font-size: 2vw;
+    }
+
+    .footer-shape{
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    nav{
+        top: 0;
+        left: 0;
+    }
+
+    .aotm{
+        margin-top: 10vw;
+        font-size: 7vw;
+    }
+
+    .info-icon{
+        margin-top: 18vw;
+    }
+
+    .skill{
+        width: auto;
+    }
+
+    .cloud{
+        height: 3rem;
+        width: auto;
+    }
+
+    .up{
+        height: 3rem;
+        width: auto;
+    }
+
+    .tail{
+        height: 3rem;
+        width: auto;
+    }
+
+    .blade{
+        height: 3rem;
+        width: auto;
+    }
+
+    .online{
+        font-size: 5vw;
+        margin-left: 2vw;
+        margin-top: 20vw;
+    }
+
+    .palorant{
+        font-size: 13vw;
+        margin-left: 1vw;
+        margin-top:0vw;
+    }
+
+    .play{
+        margin-top: 5vw;
+        width: 50vw;
+        height: 10vw;
+        font-size: 5vw;
+        margin-left: 8vw;
+    }
+
+    .description {
+        font-size: 3vw;
+        width: 50vw;
+    }
+
+    .footer-shape{
+        display: flex;
+    }
+}
