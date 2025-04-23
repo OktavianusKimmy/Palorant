@@ -1,0 +1,77 @@
+nav .menu{
+    z-index: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background img{
+    position: fixed;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Mulai dari buram */
+    background-size: cover;
+    z-index: 2;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+}
+  
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.content p{
+    width: 30vw;
+}
+
+.maps{
+    pointer-events: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* untuk Firefox */
+    justify-content: flex-start;
+    align-items: center;
+    cursor: grab;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+}
+
+.maps.active {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.maps::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}

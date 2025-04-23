@@ -170,6 +170,10 @@ ul, li {
     pointer-events: auto;
 }
 
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
 
 @media (max-width: 768px) {
     .games{

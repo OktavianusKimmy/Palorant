@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maps</title>
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/maps.css">
+    <link rel="stylesheet" href="/css/map-template.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/maps.js" defer></script>
     <script src="/js/navbar.js" defer></script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="giot">
             <p class="G">G</p>
             <div class="games">
-            <p class="iot">iot</p>
-            <p class="ames">ames</p>
+                <p class="iot">iot</p>
+                <p class="ames">ames</p>
             </div>
         </div>
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="burger-wrapper">
+            <div class="burger-menu" id="burgerMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-title" id="menuTitle"><p>Home</p></div>
         </div>
         <ul class="menu">
             <li class="menu-item"><a href="/html/index.html">Home</a></li>
@@ -27,10 +34,76 @@
             <li class="menu-item"><a href="/html/maps.html">Maps</a></li>
             <li class="menu-item"><a href="/html/news.html">News</a></li>
             <li class="menu-item"><a href="/html/report.html">Report</a></li>
+            <div class="underline"></div>
         </ul>
-    </header>
-    <div class="badan">
-        
+    </nav>
+    <div class="background">
+        <img src="/assets/background1.jpg" alt="">
+    </div>
+    <div class="overlay">
+        <div class="content">
+            <h1>MEET OUR MAPS</h1>
+            <p>You've fought therem you've died there. Better learn more about the maps that hosts the Palorant Games.</p>
+        </div>
+        <div class="maps">
+            <div class="map">
+                <div class="map-name">Ascent</div>
+                <div class="map-image">
+                    <img src="/assets/ascent/Ascent/ValorantWallpaper_Ascent_galleryimage.jpg" alt="Ascent" draggable="false">
+                </div>
+                <div class="map-description">An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they're down, you'll have to destroy them or find another way. Yield as little territory as possible.</div>
+            </div>
+            <div class="map">
+                <div class="map-name">Split</div>
+                <div class="map-image">
+                    <img src="/assets/split/Split/ValorantWallpaper_SplitMap_galleryimage.jpg" alt="Split" draggable="false">
+                </div>
+            </div>
+            <div class="map">
+                <div class="map-name">Haven</div>
+                <div class="map-image">
+                    <img src="/assets/haven/Haven/ValorantWallpaper_Haven_galleryimage.jpg" alt="Haven" draggable="false">
+                </div>
+            </div>
+            <div class="map">
+                <div class="map-name">Bind</div>
+                <div class="map-image">
+                    <img src="/assets/bind/Bind/ValorantWallpaper_Bind_galleryimage.jpg" alt="Bind" draggable="false">
+                </div>
+            </div>
+            <div class="map">
+                <div class="map-name">Icebox</div>
+                <div class="map-image">
+                    <img src="/assets/icebox/Icebox/ValorantWallpaper_Icebox_galleryimage.jpg" alt="Icebox" draggable="false">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-shape"></div>
+          
+            <div class="footer-content">
+                <div class="logo">
+                    <p class="Gi">G</p>
+                    <div class="iotames">
+                        <p class="io">iot</p>
+                        <p class="ame">ames</p>
+                    </div>
+                </div>
+          
+              <p class="copyright">
+                © 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Giot Games, Inc.
+              </p>
+          
+              <div class="social-icons">
+                <a href="#"><img src="/assets/twitter.png" alt="X"></a>
+                <a href="#"><img src="/assets/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="/assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/assets/tik-tok.png" alt="TikTok"></a>
+                <a href="#"><img src="/assets/facebook-app-symbol.png" alt="Facebook"></a>
+                <a href="#"><img src="/assets/discord.png" alt="Discord"></a>
+              </div>
+            </div>
+          </footer>
     </div>
 </body>
 </html>

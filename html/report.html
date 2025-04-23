@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report</title>
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/report.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <script src="/js/navbar.js" defer></script>
+    <script src="/js/report.js" defer></script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="giot">
             <p class="G">G</p>
             <div class="games">
-            <p class="iot">iot</p>
-            <p class="ames">ames</p>
+                <p class="iot">iot</p>
+                <p class="ames">ames</p>
             </div>
         </div>
-        <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="burger-wrapper">
+            <div class="burger-menu" id="burgerMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-title" id="menuTitle"><p>Home</p></div>
         </div>
         <ul class="menu">
             <li class="menu-item"><a href="/html/index.html">Home</a></li>
@@ -27,10 +33,112 @@
             <li class="menu-item"><a href="/html/maps.html">Maps</a></li>
             <li class="menu-item"><a href="/html/news.html">News</a></li>
             <li class="menu-item"><a href="/html/report.html">Report</a></li>
+            <div class="underline"></div>
         </ul>
-    </header>
+    </nav>
     <div class="badan">
-        
+        <div class="burem">
+            <div class="judul">
+                <h1 class="report">PALORANT BUG REPORT</h1>
+            </div>
+            <form id="registerForm" onsubmit="return register()">
+
+                <div class="container">
+                    <div class="data">
+                        <div class="data-box">
+                            <h2 class="username">Username</h2>
+                            <input type="text" id="username" class="username-input" placeholder="Enter your username">
+                            <h2 class="email">E-mail</h2>
+                            <input type="text" id="email" class="email-input" placeholder="Enter your email">
+                            <div class="terima-email">
+                                <input type="checkbox" id="followUpEmail"/>
+                                <p class="bintang">*</p>
+                                <p class="recieve">recieve further follow-ups emails</p>
+                            </div>
+                            <h2 class="server">Server</h2>
+                            <div class="server-pilihan">
+                                <div class="hongkong">
+                                    <input type="radio" name="server" value="hongkong" id="hongkong" />
+                                    <label for="hongkong">Hong Kong</label>
+                                </div>
+                                <div class="tokyo">
+                                    <input type="radio" name="server" value="tokyo" id="tokyo" />
+                                    <label for="tokyo">Tokyo</label>
+                                </div>
+                                <div class="singapore">
+                                    <input type="radio" name="server" value="singapore" id="singapore" />
+                                    <label for="singapore">Singapore</label>
+                                </div>
+                                <div class="sydney">
+                                    <input type="radio" name="server" value="sydney" id="sydney" />
+                                    <label for="sydney">Sydney</label>
+                                </div>
+                                <div class="mumbai">
+                                    <input type="radio" name="server" value="mumbai" id="mumbai" />
+                                    <label for="mumbai">Mumbai</label>
+                                </div>
+                            </div>
+                            <div class="prior">
+                                <h2 class="priority">Priority</h2>
+                                <div class="sub-prior">
+                                    <button type="button" class="low" data-priority="Low">Low</button>
+                                    <button type="button" class="med" data-priority="Medium">Medium</button>
+                                    <button type="button" class="high" data-priority="High">High</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="describe">
+                        <div class="describe-box">
+                            <h2 class="could">Could you describe the bug?</h2>
+                            <textarea name="describe-bug" id="describe-box"></textarea>
+                            <h2 class="picture">Maybe add some picture</h2>
+                            <label for="fileInput" class="upload-label">
+                            <img src="/assets/addpict.png" alt="Upload Icon">
+                            </label>
+                            <input type="file" id="fileInput" accept="image/*">
+                        </div>
+                    </div>
+                </div>
+                <div id="thankYouModal" class="thank-you-modal">
+                    <div class="thank-you-content" id="thankYouContent">
+                        <h1>Thank You!</h1>
+                        <p>Your bug report has been submitted successfully.</p>
+                        <button onclick="closeThankYouModal()">Close</button>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button class="submit">SUBMIT</button>
+                </div>
+            </form>
+            <div class="extension"></div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="footer-shape"></div>
+      
+        <div class="footer-content">
+            <div class="logo">
+                <p class="Gi">G</p>
+                <div class="iotames">
+                    <p class="io">iot</p>
+                    <p class="ame">ames</p>
+                </div>
+            </div>
+      
+          <p class="copyright">
+            © 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Giot Games, Inc.
+          </p>
+      
+          <div class="social-icons">
+            <a href="#"><img src="/assets/twitter.png" alt="X"></a>
+            <a href="#"><img src="/assets/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="/assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/assets/tik-tok.png" alt="TikTok"></a>
+            <a href="#"><img src="/assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="#"><img src="/assets/discord.png" alt="Discord"></a>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

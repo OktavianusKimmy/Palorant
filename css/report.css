@@ -1,0 +1,376 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url('/font/reemKufi/ReemKufi-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palorant';
+    src: url('/font/valorantfont/Valorant\ Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.badan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: url('/assets/bgreport.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.burem{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 5vw;
+    color: white;
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vw;
+}
+
+.data{
+    width: 40%;
+    display: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.describe{
+    width: 60%;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-box{
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    width: 25vw;
+    height: 35vw;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    padding-right: 2vw;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+}
+
+.data-box h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.data-box p{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    margin-left: 0.5vw;
+}
+
+.data-box p.recieve{
+    margin: 0;
+}
+
+.email{
+    margin-top: 1vw;
+}
+
+.server{
+    margin-top: 1vw;
+}
+
+.bintang{
+    color: red;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 20vw;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.terima-email{
+    display: flex;
+    flex-direction: row;
+}
+
+.server-pilihan div {
+    font-family: 'Reem Kufi';
+    font-size: 1vw;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.hongkong{
+    display: flex;
+    align-items: center;
+}
+
+.tokyo{
+    display: flex;
+    align-items: center;
+}
+
+.singapore{
+    display: flex;
+    align-items: center;
+}
+
+.sydney{
+    display: flex;
+    align-items: center;
+}
+
+.mumbai{
+    display: flex;
+    align-items: center;
+}
+
+label {
+    cursor: pointer;
+}
+
+.prior{
+    width: 100%;
+    height: auto;
+}
+
+.priority{
+    margin-top: 1vw;
+}
+
+.sub-prior{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1vw;
+}
+
+.sub-prior button{
+    cursor: pointer;
+}
+
+.sub-prior button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.sub-prior button.selected {
+    transform: scale(1.1);
+}
+
+.low{
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Reem Kufi';
+}
+
+.med{
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Reem Kufi';
+}
+
+.high{
+    width: 8vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Reem Kufi';
+}
+
+.describe-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35vw;
+    height: 35vw;
+    flex-direction: column;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+}
+
+.describe-box h2{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.describe-box textarea{
+    width: 30vw;
+    height: 20vw;
+    resize: none;
+}
+
+.describe .describe-box img{
+    width: 5vw;
+    height: 5vw;
+}
+
+#fileInput {
+    display: none;
+}
+
+.could{
+    margin-bottom: 1vw;
+}
+
+.picture{
+    margin-top: 1vw;
+}
+
+.submit-button{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    width: 15vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 64, 64);
+    font-family: 'Reem Kufi';
+    font-size: 2vw;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: white;
+    color: rgb(240, 64, 64);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.extension{
+    width: 100%;
+    height: 20vw;
+}
+
+.thank-you-modal {
+    display: none; /* Sembunyikan secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap transparan */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-content {
+    background-color: rgb(94, 94, 94);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-content h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: 'Reem Kufi';
+}
+
+.thank-you-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: 'Reem Kufi';
+}
+
+.thank-you-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(240, 64, 64);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Reem Kufi';   
+}
+
+.thank-you-content button:hover {
+    background-color: #e03232;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .data-box{
+        width: 30vw;
+        height: 40vw;
+    }
+
+    .describe-box{
+        width: 40vw;
+        height: 40vw;
+    }
+    h1 {
+        margin-top: 2vw;
+    }
+}
