@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url('/font/reemKufi/ReemKufi-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palorant';
+    src: url('/font/valorantfont/Valorant\ Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.badan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: antiquewhite;
+}
+
+.news-container h1{
+    width: 100%;
+    font-size: 5vw;
+    font-family: 'Reem Kufi', sans-serif;
+    color: white;
+    background-color: rgb(16, 25, 52);
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+}
+
+.news-big{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+}
+
+.news-big h2{
+    font-size: 3vw;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.news-big p{
+    font-size: 1.5vw;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.news-big .palorant{
+    margin: 0;
+    padding: 0;
+    background: none;
+    position: absolute;
+    font-size: 3vw;
+    font-family: 'Palorant', sans-serif;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.big-image{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.big-image:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.palorant.hovered {
+    transform: scale(1.01); /* Tambahkan efek transformasi */
+    transition: 0.5s; /* Tambahkan transisi */
+}
+
+span{
+    width: 80vw;
+    height: 0.3vw;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.mini-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan lebar yang sama */
+    grid-template-rows: repeat(2, auto); /* 2 baris dengan tinggi otomatis */
+    gap: 2vw; /* Jarak antar elemen grid */
+    width: 75%; /* Pastikan elemen mengambil lebar penuh */
+    height: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.news1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.news1 h2{
+    font-size: 2vw;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.news1 p{
+    font-size: 1.2vw;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.news-image{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.news-image:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.footer-shape{
+    display: none;
+}
+
+@media (max-width: 480px){
+    
+    nav{
+        height: 106px
+    }
+}

@@ -4,6 +4,8 @@
     height: auto;
     flex: 0 0 auto;
     margin-left: 3vw;
+    position: relative;
+    align-items: center;
 }
 
 .map-image img{
@@ -12,10 +14,31 @@
   display: block;
 }
 
-.map-description{
+.map-description p{
   color: white;
   font-family: 'Reem Kufi', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  word-wrap: break-word;
+  white-space: normal;
   width: 100%;
   height: auto;
+}
+
+.map-name{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.map-name h1{
+  color: white; /* atau warna lain biar kontras dengan gambar */
+  font-size: 2vw;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* biar lebih kelihatan */
+  margin-bottom: 2vw;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 4vw;
 }

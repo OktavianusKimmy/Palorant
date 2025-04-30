@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Tampilkan underline di item pertama (opsional)
-    if (items.length > 0) {
-      moveUnderline(items[0]);
-    }
+    // if (items.length > 0) {
+    //   moveUnderline(items[0]);
+    // }
 
     items.forEach((item) => {
       item.addEventListener("mouseenter", () => {
