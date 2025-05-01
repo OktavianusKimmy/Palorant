@@ -41,6 +41,10 @@ function register() {
         usernameInput.style.border = "2px solid red";
         alertMessages.push("Username tidak boleh kosong!");
         isValid = false;
+    } else if (username.length < 5 || username.length > 20) {
+        usernameInput.style.border = "2px solid red";
+        alertMessages.push("Username harus antara 5 hingga 20 karakter!");
+        isValid = false;
     }
 
     // Validasi email

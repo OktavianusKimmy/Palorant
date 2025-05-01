@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    src: url('/font/reemKufi/ReemKufi-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palorant';
+    src: url('/font/valorantfont/Valorant\ Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.agent-image {
+    position: relative;
+    width: 230px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 350px; /* Sesuaikan ukuran sesuai kebutuhan */
+    overflow: hidden; /* Pastikan gambar tidak keluar dari div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(20, 56, 95), rgb(154, 209, 251)); /* Tambahkan latar belakang jika diperlukan */
+    border-radius: 10px; /* Opsional: Tambahkan border radius */
+}
+
+.agent-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 11;
+}
+
+.agent-image .image {
+    position: absolute;
+    margin-bottom: -40px;
+}
+
+.agent-image .role {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    object-fit: contain;
+}
+
+.agent-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.agent:hover .agent-name {
+    opacity: 1; /* Tampilkan elemen */
+    transition: opacity 0.3s ease; /* Efek transisi */
+}
+
+.agent-name h1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.agent-role{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.agent-role p{
+    font-size: 15px;
+    font-family: 'Reem Kufi', sans-serif;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: left;
+}
