@@ -1,52 +1,60 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menu = document.querySelector(".menu");
-    const items = document.querySelectorAll(".menu-item a");
-    const underline = document.querySelector(".underline");
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".menu");
+  const items = document.querySelectorAll(".menu-item a");
+  const underline = document.querySelector(".underline");
+  const burger = document.getElementById("burgerMenu");
+  const menuTitle = document.getElementById("menuTitle");
+  const menuLinks = document.querySelectorAll(".menu a");
 
-    function moveUnderline(el) {
-      const rect = el.getBoundingClientRect();
-      const parentRect = menu.getBoundingClientRect();
-
-      underline.style.width = `${rect.width}px`;
-      underline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+  // Tampilkan underline dan menu title di menu aktif saat load
+  const current = document.querySelector(".menu-item a.active");
+  if (current) {
+    moveUnderline(current);
+    if (menuTitle) {
+      menuTitle.querySelector("p").textContent = current.textContent.trim();
     }
+  }
 
-    // Tampilkan underline di item pertama (opsional)
-    // if (items.length > 0) {
-    //   moveUnderline(items[0]);
-    // }
+  // Fungsi pindahkan underline
+  function moveUnderline(el) {
+    const rect = el.getBoundingClientRect();
+    const parentRect = menu.getBoundingClientRect();
 
-    items.forEach((item) => {
-      item.addEventListener("mouseenter", () => {
-        moveUnderline(item);
-      });
+    underline.style.width = `${rect.width}px`;
+    underline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+  }
 
-      item.addEventListener("click", () => {
-        moveUnderline(item);
-      });
+  // Hover dan klik menu
+  items.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      moveUnderline(item);
     });
 
-    // Optional: hilangkan underline saat mouse keluar dari menu
-    menu.addEventListener("mouseleave", () => {
-      underline.style.width = "0";
-    });
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burgerMenu");
-    const menu = document.querySelector(".menu");
-    const menuTitle = document.getElementById("menuTitle");
-    const menuLinks = document.querySelectorAll(".menu a");
-  
-    burger.addEventListener("click", function () {
-      menu.classList.toggle("show");
-    });
-  
-    menuLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        const text = link.textContent.trim();
-        menuTitle.textContent = text;
-        menu.classList.remove("show"); // Optional: hide menu after click
-      });
+    item.addEventListener("click", () => {
+      moveUnderline(item);
     });
   });
+
+  // Hilangkan underline saat mouse keluar
+  menu.addEventListener("mouseleave", () => {
+    underline.style.width = "0";
+  });
+
+  // Burger click + ubah judul
+  burger.addEventListener("click", function () {
+    menu.classList.toggle("show");
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      const text = link.textContent.trim();
+      menuTitle.querySelector("p").textContent = text;
+      menu.classList.remove("show");
+      moveUnderline(link);
+
+      // aktifkan menu
+      menuLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+});

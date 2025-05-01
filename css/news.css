@@ -23,9 +23,12 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    margin-top: 103px;
 }
 
 .news-container{
+    margin-top: 0;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,7 +152,5 @@ span{
 
 @media (max-width: 480px){
     
-    nav{
-        height: 106px
-    }
+    
 }
