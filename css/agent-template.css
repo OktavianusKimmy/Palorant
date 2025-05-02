@@ -36,6 +36,8 @@
 .agent-image .image {
     position: absolute;
     margin-bottom: -40px;
+    z-index: 2;
+    width: 100%;
 }
 
 .agent-image .role {
