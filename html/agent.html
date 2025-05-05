@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/agent.css">
     <link rel="stylesheet" href="/css/agent-template.css">
     <link rel="icon" type="image/png" href="/assets/icon-head.png">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/navbar.js" defer></script>
     <script src="/js/navbar.js" defer></script>
 </head>
 <body>
@@ -48,7 +50,19 @@
             <div class="agent-wrapper">
                 <div class="agents">
                     <div class="agent">
-                        <div class="agent-image">
+                        <div class="agent-image" id="phoenix">
+                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
+                            <img src="/assets/phoenix.png" alt="Phoenix" draggable="false" class="image">
+                            <div class="agent-name">
+                                <h1>INIX</h1>
+                            </div>
+                            <div class="agent-role">
+                                <p>DUELIST</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-image" id="jett">
                             <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
                             <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
                             <div class="agent-name">
@@ -60,37 +74,37 @@
                         </div>
                     </div>
                     <div class="agent">
-                        <div class="agent-image">
-                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
-                            <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
+                        <div class="agent-image" id="chamber">
+                            <img src="/assets/SentinelClassSymbol.webp" alt="" class="role">
+                            <img src="/assets/chamber.png" alt="Chamber" draggable="false" class="image">
                             <div class="agent-name">
-                                <h1>JEFF</h1>
+                                <h1>AMBER</h1>
                             </div>
                             <div class="agent-role">
-                                <p>DUELIST</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent">
-                        <div class="agent-image">
-                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
-                            <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
-                            <div class="agent-name">
-                                <h1>JEFF</h1>
-                            </div>
-                            <div class="agent-role">
-                                <p>DUELIST</p>
+                                <p>SENTINEL</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="agents2">
                     <div class="agent">
-                        <div class="agent-image">
-                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
-                            <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
+                        <div class="agent-image" id="viper">
+                            <img src="/assets/ControllerClassSymbol.webp" alt="" class="role">
+                            <img src="/assets/viper.png" alt="Viper" draggable="false" class="image">
                             <div class="agent-name">
-                                <h1>JEFF</h1>
+                                <h1>VIAR</h1>
+                            </div>
+                            <div class="agent-role">
+                                <p>CONTROLLER</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-image" id="yoru">
+                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
+                            <img src="/assets/yoru.png" alt="Yoru" draggable="false" class="image">
+                            <div class="agent-name">
+                                <h1>YOUR</h1>
                             </div>
                             <div class="agent-role">
                                 <p>DUELIST</p>
@@ -98,26 +112,14 @@
                         </div>
                     </div>
                     <div class="agent">
-                        <div class="agent-image">
-                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
-                            <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
+                        <div class="agent-image" id="unknown">
+                            <img src="/assets/InitiatorClassSymbol.webp" alt="" class="role">
+                            <img src="/assets/kayo.png" alt="Unknown Agent" draggable="false" class="image">
                             <div class="agent-name">
-                                <h1>JEFF</h1>
+                                <h1>???</h1>
                             </div>
                             <div class="agent-role">
-                                <p>DUELIST</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agent">
-                        <div class="agent-image">
-                            <img src="/assets/DuelistClassSymbol.webp" alt="" class="role">
-                            <img src="/assets/jett.png" alt="Jeff" draggable="false" class="image">
-                            <div class="agent-name">
-                                <h1>JEFF</h1>
-                            </div>
-                            <div class="agent-role">
-                                <p>DUELIST</p>
+                                <p>INITIATOR</p>
                             </div>
                         </div>
                     </div>
@@ -125,5 +127,31 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-shape"></div>
+      
+        <div class="footer-content">
+            <div class="logo">
+                <p class="Gi">G</p>
+                <div class="iotames">
+                    <p class="io">iot</p>
+                    <p class="ame">ames</p>
+                </div>
+            </div>
+      
+          <p class="copyright">
+            © 2020-2025 Giot Games, Inc. GIOT GAMES, PALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Giot Games, Inc.
+          </p>
+      
+          <div class="social-icons">
+            <a href="#"><img src="/assets/twitter.png" alt="X"></a>
+            <a href="#"><img src="/assets/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="/assets/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/assets/tik-tok.png" alt="TikTok"></a>
+            <a href="#"><img src="/assets/facebook-app-symbol.png" alt="Facebook"></a>
+            <a href="#"><img src="/assets/discord.png" alt="Discord"></a>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

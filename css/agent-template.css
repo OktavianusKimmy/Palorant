@@ -14,15 +14,61 @@
 
 .agent-image {
     position: relative;
-    width: 230px; /* Sesuaikan ukuran sesuai kebutuhan */
-    height: 350px; /* Sesuaikan ukuran sesuai kebutuhan */
-    overflow: hidden; /* Pastikan gambar tidak keluar dari div */
+    width: 230px;
+    height: 350px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(108, 108, 108));
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgb(20, 56, 95), rgb(154, 209, 251)); /* Tambahkan latar belakang jika diperlukan */
-    border-radius: 10px; /* Opsional: Tambahkan border radius */
+    border-radius: 10px;
+}
+
+#jett{
+    background: linear-gradient(to bottom, rgb(20, 56, 95), rgb(154, 209, 251));
+}
+
+#jett .image{
+    margin-bottom: -39px;
+}
+
+#phoenix{
+    background: linear-gradient(to bottom, rgb(219, 100, 14), rgb(227, 186, 139));
+}
+
+#phoenix .image{
+    margin-bottom: -43px;
+}
+
+#chamber{
+    background: linear-gradient(to bottom, rgb(220, 172, 50), rgb(255, 255, 255));
+}
+
+#chamber .image{
+    margin-bottom: -27px;
+}
+
+#viper{
+    background: linear-gradient(to bottom, rgb(3, 113, 40), rgb(183, 236, 182));
+}
+
+#viper .image{
+    margin-bottom: -20px;
+}
+
+#yoru{
+    background: linear-gradient(to bottom, rgb(30, 22, 150), rgb(126, 139, 205));
+}
+
+#yoru .image{
+    margin-bottom: -20px;
+}
+
+#unknown .image{
+    filter: brightness(0);
+    margin-bottom: -53px;
+    margin-right: -20px;
 }
 
 .agent-image img {
@@ -35,7 +81,6 @@
 
 .agent-image .image {
     position: absolute;
-    margin-bottom: -40px;
     z-index: 2;
     width: 100%;
 }
@@ -55,7 +100,7 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    z-index: 3;
+    z-index: 4;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
