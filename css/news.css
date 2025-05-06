@@ -63,6 +63,7 @@
 .news-big h2{
     font-size: 3vw;
     font-family: 'Reem Kufi', sans-serif;
+    margin-top: 5px;
 }
 
 .news-big p{
@@ -127,6 +128,7 @@ span{
 .news1 h2{
     font-size: 2vw;
     font-family: 'Reem Kufi', sans-serif;
+    margin-top: 5px;
 }
 
 .news1 p{
@@ -150,7 +152,56 @@ span{
     display: none;
 }
 
+@media (max-width: 768px){
+    .news-big h2{
+        font-size: 30px;
+    }
+    
+    .news-big p{
+        font-size: 18px;
+    }
+
+    .news1 h2{
+        font-size: 23px;
+    }
+
+    .news1 p{
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 480px){
+    .mini-news {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
     
+    .news-big{
+        width: 80%;
+        height: auto;
+    }
+
+    .news-big h2{
+        font-size: 30px;
+    }
     
+    .news-big p{
+        font-size: 18px;
+    }
+
+    .news1{
+        width: 90%;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .news1 h2{
+        font-size: 23px;
+    }
+
+    .news1 p{
+        font-size: 15px;
+    }
 }

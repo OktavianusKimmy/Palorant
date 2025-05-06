@@ -97,6 +97,8 @@
 .agent-name {
     position: absolute;
     width: 100%;
+    height: 100%;
+    align-content: center;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -106,8 +108,35 @@
 }
 
 .agent:hover .agent-name {
-    opacity: 1; /* Tampilkan elemen */
-    transition: opacity 0.3s ease; /* Efek transisi */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.agent:hover .agent-role, .agent:hover .agent-image .image, .agent:hover .agent-image .role {
+    opacity: 0.5; /* Sembunyikan elemen lain */
+    transition: opacity 0.5s ease; /* Efek transisi */
+}
+
+.agent-desc{
+    text-align: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    width: 80%;
+    height: 100%;
+    align-content: center;
+}
+
+.agent-desc p{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.agent-desc.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .agent-name h1 {

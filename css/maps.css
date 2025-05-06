@@ -96,3 +96,45 @@ footer{
 .footer-shape{
     display: none;
 }
+
+@media (max-width: 768px){
+    .content p{
+        width: 60vw;
+    }
+
+    .maps{
+        height: 50vh;
+    }
+
+    .footer{
+        margin-top: -1px;
+    }
+}
+
+
+@media (max-width: 428px){
+    .content p{
+        width: 70vw;
+    }
+
+    .maps{
+        height: 70vw;
+        gap: 40px;
+    }
+
+    .map{
+        transform: scale(1.2);
+    }
+
+    .map .map-image .map-name{
+        justify-content: center;
+    }
+
+    .map .map-description p{
+        /* font-size: 8px; */
+    }
+
+    .footer{
+        margin-top: -1px;
+    }
+}
