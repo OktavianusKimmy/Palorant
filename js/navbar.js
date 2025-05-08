@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuTitle = document.getElementById("menuTitle");
   const menuLinks = document.querySelectorAll(".menu a");
 
-  // Tampilkan underline dan menu title di menu aktif saat load
   const current = document.querySelector(".menu-item a.active");
   if (current) {
     moveUnderline(current);
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Fungsi pindahkan underline
   function moveUnderline(el) {
     const rect = el.getBoundingClientRect();
     const parentRect = menu.getBoundingClientRect();
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     underline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
   }
 
-  // Hover dan klik menu
   items.forEach((item) => {
     item.addEventListener("mouseenter", () => {
       moveUnderline(item);
@@ -35,12 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Hilangkan underline saat mouse keluar
   menu.addEventListener("mouseleave", () => {
     underline.style.width = "0";
   });
 
-  // Burger click + ubah judul
   burger.addEventListener("click", function () {
     menu.classList.toggle("show");
   });
@@ -52,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
       menu.classList.remove("show");
       moveUnderline(link);
 
-      // aktifkan menu
       menuLinks.forEach(l => l.classList.remove("active"));
       link.classList.add("active");
     });
